@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="imagem/png" href="imagens/icone.png" />
+</head>
+<script>
+function checaIdade() {
+  var idade = document.getElementById('idadeuser').value;
+
+  idade = parseInt(idade);
+
+  if (idade > 18) {
+    alert("Opa! Apenas jovens entre 12 e 18  anos podem entrar no Interact! Por favor procure um Rotary ou Rotaract para se associar");
+    event.preventDefault();
+  } 
+  
+  else if (idade < 12 ){
+    alert("Opa! Apenas jovens entre 12 e 18  anos podem entrar no Interact! Por favor procure um Rotakids para se associar");
+    event.preventDefault();
+  }
+
+  else {
+    alert("Formulário enviado com sucesso! Você será redirecionado para nossa página de contato");
+  }
+
+}
+</script>
+<body>
+    <div class="navegtop">
+        <a class="#inicio" href="index.html">Início</a>
+        <a class="#contato" href="contato.html">Contate-nos</a>
+        <a class="#enfoque" href="enfoque.html">Áreas de Enfoque</a>
+        <a class="ativo" href="formulario.html">Junte-se a nós</a>
+    </div>
+    <h1>Formulário de Inscrição</h1>
+
+    <form action="contato.html">
+        <fieldset>
+            <legend><b>Dados Pessoais:</b></legend>
+            <div class="inputBox">
+                <input type="text" name="nome" class="inputUser" required>
+                <label for="nome" class="labelInput">Nome Completo:</label>
+            </div></br></br>
+
+            <div class="inputBox">
+                <input type="email" name="email" class="inputUser" required>
+                <label for="email" class="labelInput">Email:</label>
+            </div></br></br>
+
+            <div class="inputBox">
+                <input type="text" name="numero" class="inputUser" required>
+                <label for="numero" class="labelInput">Número para contato:</label>
+            </div></br></br>
+
+            <div class="inputBox">
+                <input type="number" name="idade" id="idadeuser" class="inputUser" min="1" max="120" required>
+                <label for="idade" class="labelInput">Idade:</label>
+            </div></br>
+
+            <p>
+                <legend><b>Selecione seu gênero:</b></legend>
+            </p>
+            <input type="radio" name="gen" value="genero1">
+            <label for="genero1">Masculino</label>
+
+            <input type="radio" name="gen" value="genero2">
+            <label for="genero2">Feminino</label>
+
+            <input type="radio" name="gen" value="genero3">
+            <label for="genero3">Outro</label> <br /><br />
+
+
+            <legend><b>Em quais dos lugares abaixo você viu nossos trabalhos?</b></legend><br />
+            <input type="checkbox" id="checktrab" name="checktrab" value="rua">
+            <label for="checktrab">Nas ruas da minha cidade </label><br>
+
+            <input type="checkbox" id="checktrab" name="checktrab" value="insta">
+            <label for="checktrab">No instagram</label><br>
+
+            <input type="checkbox" id="checktrab" name="checktrab" value="twitter">
+            <label for="checktrab">No twitter</label></br></br>
+
+
+            <legend><b>Como você fala a palavra "Rotary"?</b></legend></br>
+            <select id="rotary" name="rotary">
+                <option value="rô">Rôtary</option>
+                <option value="ró">Rótary</option>
+            </select>
+
+        </fieldset>
+        <br /><br /><input type="submit" value="Enviar" id="submit" onclick="checaIdade()">
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+.navegtop{
+    background-color:#f5f3f5;
+    overflow: hidden;
+    padding:0.2em;
+}
+
+.navegtop a{
+    float: center;
+    color: black;
+    text-align: center;
+    padding: 30px 16px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.navegtop a:hover{
+    background-color: #576CA8;
+    color:black;
+}
+
+.navegtop a.ativo{
+    background-color: #20217C;
+    color:#F5F3F5;
+}
+
+.naveglado {
+    width: 250px;
+    position:absolute;
+    z-index: 1;
+    top: 70px;
+    left: 10px;
+    background: #3456A4;
+    border-radius: 2px;
+    border:white;
+    overflow-x: hidden;
+    padding: 8px 0;
+}
+  
+.naveglado a{
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #050505;
+    display: block;
+}
+  
+  .naveglado a:hover {
+    color: #46413B;
+  }
+  
+  .main {
+    margin-left: 140px; /* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .naveglado {padding-top: 15px;}
+    .naveglado a {font-size: 18px;}
+  }
+
+.naveglado a.ativo{
+    color:white;
+}
+
+.imagem_grande img{
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all0.3s;
+    transition: all 0.3s;
+}
+
+.imagem_grande:hover img{
+    -moz-transform: scale(1.1);
+    -webkit-transform:scale(1.1) ;
+    transform: scale(1.1);
+}
+
+.texinicial{
+    font-size:larger;
+}
+
+.imagem_grande{
+    width: 30em;
+    height: 26em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img_c{
+    margin-left: auto;
+    margin-right: auto;
+    width: 30em;
+    height: 15em;
+}
+
+.img_c img{
+    max-width: 200%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.img_c:hover img{
+    -moz-transform: scale(1.1);
+    -webkit-transform:scale(1.1) ;
+    transform: scale(1.2);
+}
+
+ul{
+    align-self:baseline;
+    padding-left: 0em;
+}
+
+li{
+    font-size:larger;
+}
+
+body{
+    background-image: linear-gradient(to left, #5b77ca, #2552C3);
+    text-align: center;
+    color: black;
+    font-size: large;
+    font-family: "Lato", sans-serif;
+}
+
+textarea{
+    background-color: #FFF;
+    font-size: larger;
+}
+
+.topicos{
+    text-align: center;
+}
+
+.img_end:hover img{
+    -moz-transform: scale(1.1);
+    -webkit-transform:scale(1.1) ;
+    transform: scale(1.1);
+}
+
+.img_end img{
+    max-width: 200%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;   
+}
+
+.img_end{
+    width: 30em;
+    height: 10em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form{
+    color: white;
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 15px;
+    width: 30%;
+}
+
+.inputBox{
+    position: relative;
+}
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+
+legend { 
+    font-size: larger;
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+}
+
+fieldset {
+    background-color: #1F3689;
+    border: none;
+    border: 3px solid dodgerblue;
+    padding-bottom: 2em;
+    padding-top: 2em;
+}
+
+select{
+    border-radius: 8px;
+    font-size: large;
+}
+
+#submit{
+    background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#submit:hover{
+    background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
+}
